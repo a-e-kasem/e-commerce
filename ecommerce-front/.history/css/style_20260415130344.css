@@ -1,0 +1,123 @@
+/* Global Settings & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: black;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* تنسيق الحاوية اليمين في الناف بار */
+#nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* مسافة بين العناصر */
+}
+
+/* تنسيق خانة البحث */
+#nav-auth input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#nav-auth input[type="text"]:focus {
+    border-color: #ff4757; /* لون البراند بتاعك */
+    box-shadow: 0 0 5px rgba(255, 71, 87, 0.2);
+}
+
+/* تنسيق كلمة Login ولينك الاسم */
+#nav-auth a, #nav-auth span {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+#nav-auth a:hover {
+    color: #ff4757;
+}
+
+/* تنسيق اسم المستخدم اللي بيظهر بعد اللوج إن */
+.user-name {
+    color: #ff4757;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* تنسيق زرار الـ Logout */
+.logout-btn {
+    background-color: transparent;
+    border: 1px solid #ff4757;
+    color: #ff4757;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #ff4757;
+    color: white;
+}
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive (Mobile Basic) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
