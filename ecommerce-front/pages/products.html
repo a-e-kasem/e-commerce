@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Products</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/products.css">
+</head>
+
+<body>
+  <header>
+
+    <div class="navbar">
+      
+      <div class="logo">E-commerce</div>
+      <ul class="menu">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="cart.html">CART</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <input type="text" placeholder="Search Product...">
+      </div>
+
+    </div>
+  </header>
+
+  <div class="layout">
+  <div class="filters"> 
+
+    <h3>Category</h3>
+    <label><input type="checkbox" value="Men" class="categoryFilter"> Men</label>
+    <label><input type="checkbox" value="Woman" class="categoryFilter"> Woman</label>
+    <label><input type="checkbox" value="Kids" class="categoryFilter"> kids</label>
+    <label><input type="checkbox" value="Sport" class="categoryFilter"> Sport</label>
+    
+    <h3>Color</h3>
+    <label><input type="checkbox" value="Black" class="colorFilter"> Black</label>
+    <label><input type="checkbox" value="Red" class="colorFilter"> Red</label>
+    <label><input type="checkbox" value="Blue" class="colorFilter"> Blue</label>
+    <label><input type="checkbox" value="White" class="colorFilter"> White</label>
+    <label><input type="checkbox" value="Green" class="colorFilter"> Green</label>
+
+    <h3>Size</h3>
+    <label><input type="checkbox" value="S" class="sizeFilter"> S</label>
+    <label><input type="checkbox" value="M" class="sizeFilter"> M</label>
+    <label><input type="checkbox" value="L" class="sizeFilter"> L</label>
+
+    <h3>Max Price</h3>
+    <input type="range" id="priceRange" min="0" max="500" value="500">
+    <span id="priceValue">500</span> $
+
+  </div>
+  <div id="productsContainer"></div>
+
+    <footer>
+      <p>© 2026 Fashion Store</p>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+
+
+</body>
+</html>
